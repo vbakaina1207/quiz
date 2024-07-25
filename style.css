@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* width: 100%; */
+    height: 100%;
+    text-align: center;
+    background-color:rgb(250, 216, 174);
+    margin: 2%;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(240, 179, 132);
+    color: rgb(90, 46, 2);
+}
+
+h1{
+    color: rgb(90, 46, 2);;
+    line-height: 40px;
+    font-weight:800;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.block-answer{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ text-align: center;
+ margin: 50px;
+}
+
+.block-left,
+.block-right{
+    width: 50%;
+    align-items: center;
+}
+.block-left{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.block-left button{
+    width: 193px;
+    height: 45px;
+    border: 2px solid rgb(90, 46, 2);;
+    background-color: white;
+    color: rgb(90, 46, 2);;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    border-radius: 7px;
+    margin: 15px;
+}
+
+.card{
+    width: calc(33% - 35px);
+    background: linear-gradient(yellow, rgb(0, 110, 255));
+    height: 120px;
+    margin: 15px;
+    position: relative;
+    pointer-events:fill;
+}
+.card::after{
+    counter-increment: number;
+    content: counter(number);
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.block-question{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 25px 0;
+    counter-reset: number;
+}
+
+#options{
+    margin: 15px 0;
+}
+
+.btn-option{
+    width: 170px;
+    height: 45px;
+    border: 2px solid rgb(90, 46, 2);;
+    background-color: rgb(245, 236, 225);
+    color: rgb(90, 46, 2);;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    border-radius: 7px;
+    margin: 15px;
+}
+
+
+.green{
+    background: linear-gradient(rgb(177, 218, 179), rgb(2, 92, 2)) !important;
+}
+
+.red{
+    background: red;
+}
+
+.yellow{
+    background: linear-gradient(rgb(192, 45, 26), yellow);
+}
